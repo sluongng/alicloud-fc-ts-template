@@ -10,13 +10,13 @@
     "update": "fcli function update --service-name housing --function-name vnwork --handler dist/index.handler --runtime nodejs8 --code-dir .",
     "invoke": "fcli function invoke --service-name housing --function-name vnwork",
     "logs": "fcli function logs --service-name housing --function-name vnwork --start $(date -v -5m -u '+%Y-%m-%dT%H:%M:%SZ')",
-    "live-test": "npm run build && npm run update && npm run invoke && npm run logs"
+    "live-test": "npm run build && npm run update && npm run invoke && npm run logs",
+    "all": "npm run build && npm"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
-    "qs": "^6.5.2",
-    "sprintf-js": "^1.1.1"
+    "typescript": "^2.9.2"
   }
 }
