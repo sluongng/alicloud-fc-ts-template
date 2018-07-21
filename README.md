@@ -6,14 +6,14 @@ A template reposistory for Serverless project using Aliyun(AliCloud) Function Co
 
 In this project, we operate under the following assumptions:
 
-- You have an AliCloud account with at least Function Compute and SLS(for logging related command) enabled
-- You decided that you will be using NodeJS8 runtime
+- You have an AliCloud account with at least Function Compute and SLS (for logging related features) enabled
+- You decided that you will be using Nodejs8 runtime
 - You have setup [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - You have setup [FCli](https://github.com/aliyun/fcli), the official tooling for function compute.
     - [Official Documentation (CN)](https://help.aliyun.com/document_detail/52995.html)
     - [Official Documentation (EN)](https://www.alibabacloud.com/help/doc-detail/52995.htm) (less information)
-- This repository also included `ts-node` and the (launch.json)[.vscode/launch.json] configurations for debugging on VSCode.
-    - Use `index.test.ts` file for debugging.
+- This repository also included `ts-node` and the [launch.json](.vscode/launch.json) configurations for debugging on VSCode.
+    - Use [index.test.ts](src/index.test.ts) file for debugging.
 
 ## How to use
 
