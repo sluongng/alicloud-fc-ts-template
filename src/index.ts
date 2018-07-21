@@ -1,25 +1,25 @@
 import axios from 'axios';
 
-interface FC_Credentials {
+class FC_Credentials {
     accessKeyId: string;
     accessKeySecret: string;
     securityToken: string;
 }
 
-interface FC_Function {
+class FC_Function {
     name: string;
     handler: string;
     memory: number;
     timeout: number;
 }
 
-interface FC_Service {
+class FC_Service {
     name: string;
     logProject: string;
     logStore: string;
 }
 
-interface FC_Context {
+class FC_Context {
     requestId: string;
     region: string;
     accountId: string;
@@ -35,7 +35,7 @@ interface FC_CallBack {
 }
 
 // Documentation: https://www.alibabacloud.com/help/doc-detail/70140.htm#Timer
-interface FC_Event_TimeTrigger {
+class FC_Event_TimeTrigger {
     triggerName: string;
     triggerTime: string;
     payload: string;
