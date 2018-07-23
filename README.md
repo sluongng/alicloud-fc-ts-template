@@ -21,6 +21,7 @@ In this project, we operate under the following assumptions:
 git clone https://github.com/sluongng/alicloud-fc-ts-template
 ```
 
+0. Update `env-setup.sh` with appropriate names so `npm run <script-name>` will work properly
 1. Development happen in `./src` folder
 2. Compile codes to `*.js` with `npm run build`
 3. Test the function locally with `npm test`
@@ -36,6 +37,7 @@ git clone https://github.com/sluongng/alicloud-fc-ts-template
     Other trigger types have different `event` structure and require additional implementation. 
     
     More information on different Triggers `event`, please read official [Configure triggers and events](https://www.alibabacloud.com/help/doc-detail/70140.htm)
+
 - HTTP Trigger has a completely different `handler()` interface and also will require modification.
     
     For more please review [HTTP trigger interface format](https://www.alibabacloud.com/help/doc-detail/71229.htm#h3-http-trigger-interface-format)
