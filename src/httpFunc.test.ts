@@ -1,6 +1,6 @@
-import { httpFunc } from "httpFunc";
+import { FuncCompHttpTrigRequest, HttpMethods, IFuncCompHttpTrigResponse } from "alicloud/httpModels";
 import { Readable } from "stream";
-import { FuncCompHttpTrigRequest, HttpMethods, IFuncCompHttpTrigResponse } from "./alicloud/httpModels";
+import { httpFunc } from "./httpFunc";
 
 class MockHttpResponse implements IFuncCompHttpTrigResponse {
 
@@ -21,8 +21,9 @@ class MockHttpResponse implements IFuncCompHttpTrigResponse {
     }
 }
 
-const test = new FuncCompHttpTrigRequest(HttpMethods.HTTP_METHOD_GET, new URL(""), "");
+const test = new FuncCompHttpTrigRequest(HttpMethods.HTTP_METHOD_GET, new URL("http://google.com"), "0.0.0.0");
 test.push("123123");
 test.push("456456");
+test.push("abcdef");
 
 httpFunc(test, new MockHttpResponse(), null);

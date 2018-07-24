@@ -1,5 +1,5 @@
+import { FuncCompContext, FuncCompEventTimeTrigger, IFuncCompCallBack } from "alicloud/functionCompute";
 import axios from "axios";
-import { FuncCompContext, FuncCompEventTimeTrigger, IFuncCompCallBack } from "./alicloud/functionCompute";
 
 export function handler(
     event: FuncCompEventTimeTrigger,
