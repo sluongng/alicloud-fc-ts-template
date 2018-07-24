@@ -25,10 +25,11 @@ git clone https://github.com/sluongng/alicloud-fc-ts-template
 1. Development happen in `./src` folder
 2. Compile codes to `*.js` with `npm run build`
 3. Test the function locally with `npm test`
-4. Create/Update the function using `npm run create` / `npm run update` commands
-5. Invoke the function online with `npm run invoke`
-6. (Assuming you have SLS setup for FC service) Check logs of function in the last 5 minutes using `npm run logs`
-7. Run whole live cycle with `npm run all`
+4. Create/Update the function using `npm run func-create` / `npm run func-update` commands
+5. Invoke the function online with `npm run func-invoke`
+6. (Assuming you have SLS setup for FC service) Check logs of function in the last 5 minutes using `npm run func-logs`
+7. Create/Update trigger with `npm run trigger-create` / `npm run trigger-update`
+8. Run whole live cycle with `npm run all`
 
 ## Http Trigger
 
