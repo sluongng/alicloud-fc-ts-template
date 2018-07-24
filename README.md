@@ -30,7 +30,30 @@ git clone https://github.com/sluongng/alicloud-fc-ts-template
 6. (Assuming you have SLS setup for FC service) Check logs of function in the last 5 minutes using `npm run logs`
 7. Run whole live cycle with `npm run all`
 
-## Limitation
+## Http Trigger
+
+As noted in official documentation [CN](https://help.aliyun.com/document_detail/71229.html?spm=a2c4g.11186623.6.622.9vR6BY)[EN](https://www.alibabacloud.com/help/doc-detail/71229.htm#HTTP%20trigger%20interface%20format), the Http Triggered function has different interface compare to normal `event-based` functions
+
+```javascript
+function(request, response, context) {}
+```
+
+In this repository, I have also provided a working example via [httpFunc.ts](src/httpFunc.ts) and neccessary models via [httpModels.ts](src/alicloud/httpModels.ts).
+
+The example functionality here is based on the official example on Aliyun/AlibabaCloud website.
+
+An example of [httpTrigger.yml](triggers/httpTrigger.yml) file is also included.
+
+## To Do
+
+- [x] Provided basic setup of `event` driven function
+- [x] Provided basic `npm scripts` to assit with building, testing and deploy code
+- [x] Provided standard TypScript Compiler and TSlint configurations
+- [x] Provided simple VSCode [launch.json](.vscode/launch.json) configuration for debugging locally
+- [x] Provided basic setup of `http` driven function
+- [ ] To provide setup/scripts for local docker testing with [aliyun/fc-docker](https://github.com/aliyun/fc-docker)
+- [ ] To provide more event model for `OSS`, `Gateway` and `SLS` based events
+
 
 - Currently I have only done `FC_Event_TimeTrigger` for that I have use it the most.
     
@@ -38,6 +61,7 @@ git clone https://github.com/sluongng/alicloud-fc-ts-template
     
     More information on different Triggers `event`, please read official [Configure triggers and events](https://www.alibabacloud.com/help/doc-detail/70140.htm)
 
-- HTTP Trigger has a completely different `handler()` interface and also will require modification.
+- ~HTTP Trigger has a completely different `handler()` interface and also will require modification.~
     
-    For more please review [HTTP trigger interface format](https://www.alibabacloud.com/help/doc-detail/71229.htm#h3-http-trigger-interface-format)
+    ~For more please review [HTTP trigger interface format](https://www.alibabacloud.com/help/doc-detail/71229.htm#h3-http-trigger-interface-format)~
+
