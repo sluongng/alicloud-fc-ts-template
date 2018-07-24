@@ -1,4 +1,4 @@
-import { handler } from "./index";
+import { handler } from "index";
 
 // Overloading a fake callback
 function mockCallBack(input: Error, msg?: any): void {
