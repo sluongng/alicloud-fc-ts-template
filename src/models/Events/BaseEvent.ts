@@ -1,6 +1,10 @@
-// Base event contains shared attributes from CdnEvent and CronEvent
+// BaseEvent contains shared attributes from CdnEvent and CronEvent
 
-export default abstract class BaseEvent {
+export default class GenericEvent<T extends BaseEvent> {
+    public events: T[];
+}
+
+export abstract class BaseEvent {
     public eventName: string;
     public eventSource: string;
     public eventTime: Date;
