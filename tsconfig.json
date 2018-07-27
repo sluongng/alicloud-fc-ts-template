@@ -10,7 +10,7 @@
         "moduleResolution": "node",
         "outDir": "dist/",
         "sourceMap": true,
-        "target": "es3"
+        "target": "es2016"
     },
     "include": [
         "src/**/*.ts"

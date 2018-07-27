@@ -1,6 +1,6 @@
-import { FuncCompHttpTrigRequest, HttpMethods, IFuncCompHttpTrigResponse } from "alicloud/httpModels";
 import { Readable } from "stream";
 import { httpFunc } from "./httpFunc";
+import { FuncCompHttpTrigRequest, HttpMethods, IFuncCompHttpTrigResponse } from "./models/Events/HttpEvent";
 
 class MockHttpResponse implements IFuncCompHttpTrigResponse {
 

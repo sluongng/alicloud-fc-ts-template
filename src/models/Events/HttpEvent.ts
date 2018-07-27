@@ -1,5 +1,7 @@
 import { Readable } from "stream";
 
+// CN Documentation: https://help.aliyun.com/document_detail/71229.html
+
 export enum HttpMethods {
     HTTP_METHOD_HEAD = "HEAD",
     HTTP_METHOD_GET = "GET",

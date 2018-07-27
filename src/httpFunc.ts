@@ -1,6 +1,6 @@
 import * as getRawBody from "raw-body";
-import { FuncCompContext } from "./alicloud/functionCompute";
-import { FuncCompHttpTrigRequest, IFuncCompHttpTrigResponse } from "./alicloud/httpModels";
+import FuncCompContext from "./models/Context";
+import { FuncCompHttpTrigRequest, IFuncCompHttpTrigResponse } from "./models/Events/HttpEvent";
 
 export function httpFunc(
     request: FuncCompHttpTrigRequest,
