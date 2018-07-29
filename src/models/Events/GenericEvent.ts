@@ -1,4 +1,4 @@
-import { AliCloudRegions } from "../Regions";
+import { AliCloudRegion } from "../Regions";
 
 // BaseEvent contains shared attributes from CdnEvent and CronEvent
 
@@ -11,7 +11,7 @@ export abstract class BaseEvent {
     public eventSource: string;
     public eventTime: Date;
     public eventVersion: string;
-    public region: AliCloudRegions;
+    public region: AliCloudRegion;
     public userIdentity: UserIdentity;
 }
 

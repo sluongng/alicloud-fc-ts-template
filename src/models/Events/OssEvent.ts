@@ -3,6 +3,7 @@ import { BaseEvent } from "./GenericEvent";
 // CN Documentation: https://help.aliyun.com/document_detail/62922.html
 
 export default class OssEvent extends BaseEvent {
+    public eventName: OssEventName;
     public oss: OssMeta;
     public requestParameters: OssRequestParams;
     public responseElements: OssResponseElements;
@@ -39,4 +40,20 @@ export class OssResponseElements {
 
 export class UserIdentity {
     public principalId: string;
+}
+
+export enum OssEventName {
+    ObjectCreatedAll = "ObjectCreated:*",
+    ObjectCreatedPutObject = "ObjectCreated:PutObject",
+    ObjectCreatedPutSymlink = "ObjectCreated:PutSymlink",
+    ObjectCreatedPostObject = "ObjectCreated:PostObject",
+    ObjectCreatedCopyObject = "ObjectCreated:CopyObject",
+    ObjectCreatedInitiateMultipartUpload = "ObjectCreated:InitiateMultipartUpload",
+    ObjectCreatedUploadPart = "ObjectCreated:UploadPart",
+    ObjectCreatedUploadPartCopy = "ObjectCreated:UploadPartCopy",
+    ObjectCreatedCompleteMultipartUpload = "ObjectCreated:CompleteMultipartUpload",
+    ObjectCreatedAppendObject = "ObjectCreated:AppendObject",
+    ObjectRemovedDeleteObject = "ObjectRemoved:DeleteObject",
+    ObjectRemovedDeleteObjects = "ObjectRemoved:DeleteObjects",
+    ObjectRemovedAbortMultipartUpload = "ObjectRemoved:AbortMultipartUpload",
 }
