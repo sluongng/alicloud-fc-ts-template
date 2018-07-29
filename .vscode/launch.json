@@ -10,7 +10,7 @@
             "name": "Launch current file w/ ts-node",
             "protocol": "inspector",
             "args": [
-                "src/index.test.ts"
+                "src/eventFunc.test.ts"
             ],
             "cwd": "${workspaceRoot}",
             "runtimeArgs": [

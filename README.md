@@ -12,8 +12,6 @@ In this project, we operate under the following assumptions:
 - You have setup [FCli](https://github.com/aliyun/fcli), the official tooling for function compute.
     - [Official Documentation (CN)](https://help.aliyun.com/document_detail/52995.html)
     - [Official Documentation (EN)](https://www.alibabacloud.com/help/doc-detail/52995.htm) (less information)
-- This repository also included `ts-node` and the [launch.json](.vscode/launch.json) configurations for debugging on VSCode.
-    - Use [index.test.ts](src/index.test.ts) file for debugging.
 
 ## How to use
 
@@ -30,6 +28,13 @@ git clone https://github.com/sluongng/alicloud-fc-ts-template
 6. (Assuming you have SLS setup for FC service) Check logs of function in the last 5 minutes using `npm run func-logs`
 7. Create/Update trigger with `npm run trigger-create` / `npm run trigger-update`
 8. Run whole live cycle with `npm run all`
+
+## Debugging
+
+- This repository also included `ts-node` and the [launch.json](.vscode/launch.json) configurations for debugging on VSCode.
+    - Use [eventFunc.test.ts](src/eventFunc.test.ts) file for debugging.
+
+- TODO: Include Docker setup
 
 ## Http Trigger
 
