@@ -1,4 +1,4 @@
-import { handler } from "./timeFunc";
+import { handler } from "./eventFunc";
 
 // Overloading a fake callback
 function mockCallBack(input: Error, msg?: any): void {
