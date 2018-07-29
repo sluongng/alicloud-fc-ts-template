@@ -54,4 +54,4 @@ An example of [httpTrigger.yml](triggers/httpTrigger.yml) file is also included.
 - [x] Provided basic setup of `http` driven function
 - [ ] To provide setup/scripts for local docker testing with [aliyun/fc-docker](https://github.com/aliyun/fc-docker)
 - [x] To provide more event models for `OSS`, `CDN` and `SLS` based events
-- [ ] To provide more event models for `Gateway`, `TableStore`, `IoT` and `DataHub` based events
+- [x] To provide more event models for `Gateway`, `TableStore`, `IoT` and `DataHub` based events

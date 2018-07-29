@@ -1,4 +1,4 @@
-import BaseEvent from "./BaseEvent";
+import { BaseEvent } from "./GenericEvent";
 
 // CN Documentation: https://help.aliyun.com/document_detail/62922.html
 
