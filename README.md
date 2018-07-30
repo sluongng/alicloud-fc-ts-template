@@ -2,6 +2,12 @@
 
 A template reposistory for Serverless project using Aliyun(AliCloud) Function Compute service.
 
+```text
+This project is a Work In Progress(WIP) and changes as well as bugs are expected.
+
+Please feel free to submit an issue or pull request where you deem fit.
+```
+
 ## Requirement
 
 In this project, we operate under the following assumptions:
