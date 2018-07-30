@@ -1,21 +1,8 @@
 import { AliCloudRegion } from "../Regions";
+import BaseEvent from "./BaseEvent";
 
 // BaseEvent contains shared attributes from CdnEvent and CronEvent
 
 export default class GenericEvent<T extends BaseEvent> {
     public events: T[];
-}
-
-export abstract class BaseEvent {
-    public eventName: string;
-    public eventSource: string;
-    public eventTime: Date;
-    public eventVersion: string;
-    public region: AliCloudRegion;
-    public userIdentity: UserIdentity;
-}
-
-export class UserIdentity {
-    public principalId?: string;
-    public aliUid?: string;
 }
