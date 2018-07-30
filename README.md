@@ -60,7 +60,7 @@ An example of [httpTrigger.yml](triggers/httpTrigger.yml) file is also included.
 
 - [x] Provided basic setup of `event` driven function
 - [x] Provided basic `npm scripts` to assit with building, testing and deploy code
-- [x] Provided standard TypScript Compiler and TSlint configurations
+- [x] Provided standard TypeScript Compiler and TSlint configurations
 - [x] Provided simple VSCode [launch.json](.vscode/launch.json) configuration for debugging locally
 - [x] Provided basic setup of `http` driven function
 - [ ] To provide setup/scripts for local docker testing with [aliyun/fc-docker](https://github.com/aliyun/fc-docker)

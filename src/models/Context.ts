@@ -1,4 +1,4 @@
-import { AliCloudRegions } from "./Regions";
+import { AliCloudRegion } from "./Regions";
 
 // [CN] Documentation: https://help.aliyun.com/document_detail/73331.html#h2-context2
 
@@ -23,7 +23,7 @@ export class ServiceInfo {
 
 export default class Context {
     public requestId: string;
-    public region: AliCloudRegions;
+    public region: AliCloudRegion;
     public accountId: string;
 
     public credentials: Credentials;

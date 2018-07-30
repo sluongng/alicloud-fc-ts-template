@@ -1,10 +1,10 @@
-import { AliCloudRegions } from "../Regions";
+import { AliCloudRegion } from "../Regions";
 
 export default class DataHubEvent {
     public eventSource: string;
     public eventName: string;
     public eventSourceARN: string;
-    public region: AliCloudRegions;
+    public region: AliCloudRegion;
     public records: DataHubRecord[];
 }
 
