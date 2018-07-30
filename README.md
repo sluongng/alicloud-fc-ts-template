@@ -44,7 +44,7 @@ git clone https://github.com/sluongng/alicloud-fc-ts-template
 
 ## Http Trigger
 
-As noted in official documentation [CN](https://help.aliyun.com/document_detail/71229.html?spm=a2c4g.11186623.6.622.9vR6BY)[EN](https://www.alibabacloud.com/help/doc-detail/71229.htm#HTTP%20trigger%20interface%20format), the Http Triggered function has different interface compare to normal `event-based` functions
+As noted in official documentation [[CN]](https://help.aliyun.com/document_detail/71229.html?spm=a2c4g.11186623.6.622.9vR6BY) [[EN]](https://www.alibabacloud.com/help/doc-detail/71229.htm#HTTP%20trigger%20interface%20format), the Http Triggered function has different interface compare to normal `event-based` functions
 
 ```javascript
 function(request, response, context) {}
